@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300;500;700&display=swap');
+:root{
+    --red: #800016;
+    --red-2: #A0001C;
+    --red-3: #C00021;
+    --red-4: #FF002B;
+    --white: #FFFFFF;
+    --Blue-1: #00043A;
+    --Blue-2: #002962;
+    --Blue-3: #004E89;
+    --Blue-4: #407BA7;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+}
+header .header--icons-container{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--red-4);
+    box-shadow: 3px 6px 0px -3px #D9D9D9;
+} 
+header .header--icons-container h2{
+    margin-left: 20px;
+    
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+}
+header .header--icons-container .icons{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+.icons a img{
+    width: 40px;
+    transition: all 0.5s;
+}
+.icons a img:hover{
+    background-color: var(--white);
+    border-radius: 10px;
+    transform: scale(1.3) rotateY(360deg);
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav--logo-container{
+    margin-left: 50px;
+}
+nav .nav--logo-container img{
+    width: 300px;
+    margin-top: 5px;
+}
+nav .nav--logo-container img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+nav .nav--profile-link{
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 50px;
+}
+nav .nav--profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    transition: all 0.5s;
+}
+nav .nav--profile-link a:hover{
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: all 0.5s;
+}
+.home-main{
+    width: 100%;
+    height: 83.8vh;
+    background-image: url('../assets/pexels-photo-713149.jpeg');
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main--container-present-about-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.present--text{
+    width: 400px;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 75px;
+    transition: all 0.5s;
+}
+.present--text:hover{
+    border: 3px solid #fff;
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+.present--button:hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+.present--text p{
+    color: #fff;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.present--button{
+    width: 110px;
+    padding: 20px 10px;
+    border: none;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: var(--red-4);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #C70039;
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+.contact-main-container{
+    width: 50%;
+    height: 400px;
+    background-color: #cdd2da;
+    margin: 0 auto 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-zone{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contact-zone img{
+    width: 200px;
+    margin-bottom: 30px;
+}
+.contact-main-container:hover .contact a{
+    font-size: 3.5rem;
+    color: #C70039;
+}
+.contact a{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Style Script', cursive;
+    transition: all 0.5s;
+}
+.contact p{
+    font-size: 2rem;
+    transition: all 0.5s;
+}
