@@ -1,0 +1,59 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+header .header--icons-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.main--about-my{
+    width: 100%;
+    background-color: #cdd2da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main--about-my figure img{
+    border-radius: 30px;
+    width: 300px;
+    min-width: 200px;
+    object-fit: cover;
+}
+.about-my--content{
+    width: 500px;
+}
+.about-my--content h1{
+    font-size: 5rem;
+    font-family: 'Style Script', cursive;
+}
+.about-my--content p{
+    font-size: 2.5rem;
+}
+.main--last-proyect{
+    width: 80%;
+    margin: 40px auto;
+    padding: 0 50px 40px;
+}
+.main--last-proyect h2{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #cdd2da;
+}
+.proyect--my-proyects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.proyect--my-proyects article{
+    border: 2px solid #C70039;
+    border-radius: 20px;
+}
+.proyect--my-proyects article h3{
+    text-align: center;
+    font-size: 3rem;
+}
+.proyect--my-proyects article p{
+    font-size: 2rem;
+    padding: 0 40px;
+}
