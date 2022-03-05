@@ -16,6 +16,7 @@ header .header--icons-container{
 .main--about-my figure img{
     border-radius: 30px;
     width: 300px;
+    min-width: 200px;
     object-fit: cover;
 }
 .about-my--content{
@@ -47,9 +48,15 @@ header .header--icons-container{
 .proyect--my-proyects article{
     border: 2px solid #C70039;
     border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+.proyect--my-proyects article:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
 }
 .proyect--my-proyects article h3{
     text-align: center;
+    padding: 0 10px;
     font-size: 3rem;
 }
 .proyect--my-proyects article p{

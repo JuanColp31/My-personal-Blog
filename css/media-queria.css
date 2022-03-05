@@ -13,6 +13,7 @@
     }
 }
 @media (max-width: 500px) {
+    /* repetidos en paginas cabeceras, footer, etc */
     body header .header--icons-container{
         display: flex;
         justify-content: center;
@@ -22,6 +23,11 @@
         justify-content: flex-start;
         margin-right: 5px;
         gap: 10px;
+    }
+    body footer p{
+        color: white;
+        font-size: 1rem;
+        overflow: hidden    ;
     }
     .header--icons-container .icons a img{
         width: 30px;
@@ -38,5 +44,83 @@
     }
     .main--container-present-about-page .present--text{
         width: 300px;
+    }
+
+    main .contact-main-container{
+        flex-direction: column;
+        display: flex;
+
+        width: 80%;
+        height: auto;
+    }
+
+    /* contenido de blogs */
+    .blogs-main .blogs--news-container{
+        padding: 0 0px 40px;
+
+    }
+
+    .blogs--news-container .blogs--main-new{
+        display: grid;
+        grid-template-columns: 1fr 0;
+        grid-template-rows: repeat(3, auto);
+    }
+    .blogs--news-container .blogs--news-info-container{
+        grid-column: 1 / 2;
+        grid-row: 3 /4;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .blogs--main-new .blogs--news-info-container h2{
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+    .blogs--main-new .blogs--news-info-container p{
+        font-size: 2rem;
+    }
+    main .blogs-posts-container{
+        width: 80%;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 0px 40px;   
+    }
+    .blogs-posts-container .blog-post-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Profile.html */
+    main .main--about-my{
+        width: 100%;
+        background-color: #cdd2da;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section .about-my--content{
+        width: 100%;
+    }
+    .main--about-my .about-my--content h1 {
+        font-size: 3.5rem;
+        padding: 0 20px;
+    }
+    .main--about-my .about-my--content p {
+        font-size: 1.5rem;
+        padding: 0 20px;
+
+    }
+    
+    main .main--last-proyect{
+        width: 80%;
+        margin: 40px auto;
+        padding: 0 0px 40px;
+    }
+    .main--last-proyect .proyect--my-proyects{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 50px;
     }
 }

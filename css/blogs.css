@@ -18,7 +18,8 @@
 .blogs--main-new h3{
     font-size: 3rem;
     font-family: 'Style Script', cursive;
-    color: #C70039;
+    color: var(--Blue-3);
+    justify-self: center;
 }
 .blogs--main-new figure img{
     width: 80%;
@@ -37,7 +38,7 @@
 }
 .blogs-button{
     border: none;
-    border: 1px solid #C70039;
+    border: 1px solid var(--Blue-3);
     padding: 10px 15px;
     font-size: 12px;
     transition: all 0.5s;
@@ -45,7 +46,7 @@
     background-color: #fff;
 }
 .blogs-button:hover{
-    background-color: #C70039;
+    background-color: var(--Blue-3);
     color: #fff;
     transform: scale(1.2);
 }
